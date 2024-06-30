@@ -10,6 +10,8 @@ jobs:
     steps:
     - checkout repo 
       uses: actions/checkout@v4
+      with
+        ref: main
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
